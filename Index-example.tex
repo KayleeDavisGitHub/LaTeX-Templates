@@ -1,0 +1,154 @@
+% Index Related PDF Notes-space
+% Kyle Davis, Ohio State University
+% To compile, consider the following quick-build setup:
+% Options -> Configure TexMaker -> Quick Build ->
+% User "wizard" -> Select list of commands for "quick Build   	to run" in this order: LaTeX, MakeIndex, 					PdfLatex(twice), View PDF.
+% This will make your document, index, then run pdflatex twice (which does a lot of debugging) and then shows you the pdf.
+\documentclass[12pt]{article}
+\usepackage{makeidx} %This makes the pdf.
+
+% package notes removed, view Memo latex notes for details
+% https://github.com/KyleDavisGithub/LaTeX-Templates
+\usepackage{scrextend}
+\usepackage[T1]{fontenc}
+\usepackage{amsfonts, amsmath, amsthm, amssymb} 
+\usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
+\usepackage{setspace}
+\usepackage[bookmarks = false, hidelinks]{hyperref} 
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage[compact]{titlesec}
+\usepackage{listings} 
+\usepackage{baskervald} 
+\usepackage{enumitem} 
+\usepackage[style = american]{csquotes}
+\usepackage[american]{babel} 
+
+% Footnote Formatting
+\setlist{nolistsep, noitemsep}
+\setlength{\footnotesep}{1.2\baselineskip}
+\deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
+
+% Section Formatting 
+\def\ci{\perp\!\!\!\perp}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+
+
+
+
+\pagestyle{plain}
+\makeindex %Make the index
+\begin{document}
+
+\setlength{\parindent}{0pt}
+\setcounter{page}{1}
+\singlespacing 
+
+% some course notes utilizing index for quick reference.
+% These are to only be taken as examples.
+\section*{Notable Quotes: Political Communication}
+
+\textit{Lazarsfeld et al. 1944, p. 151}
+
+``ideas often flow from radio and print to opinion leaders and from them to the less active sections of the population'' (Idea is controversial and disputed; From ``Creating Hypbrid Field'' Jamieson. p. 5 I think.)
+
+\hfill \\
+\noindent \textit{Katz, 1988, p. 367.}
+
+``If television can make hundreds of millions of people feel something, that's a powerful effect-and one that's very neglected in our research. An example is the integrative effect of mass communication-the way in which the mass media can sometimes make the society feel as one'' (Katz, 1988, 367). (Found in ``Creating Hybrid Field'' Jamieson. p.9) \index{Emotions}
+
+\hfill 
+
+``Whereas the media had been thought capable of impressing their message on the defenseless masses,'' he noted, ``it now appears as if the audience has quite a lot of power of its own. Indeed, the fashion in research nowadays is not to ask `what the media do to people' but `what people do with the media,' or at least to be sure to ask the second question before the first'' (Katz 1968, p. 788). \index{Media}
+
+\hfill 
+
+\textit{Althaus, Scott. Chapter 8. Sage Handbook of Political Communication. p. 97.}
+
+``Like the semicolon or the human appendix, one suspects that the typical normative assertion in political communication research is probably useless, and can therefore be tolerated so long as it does no harm.''
+\index{Normative Scholarship}
+
+
+\hfill 
+\section*{Notable Quotes: American Politics Foundations}
+
+\textit{Walsh 2012:}
+
+``However, when we adopt a bottom-up approach and listen to what people themselves identify as important categorizations, other forms of consciousness become apparent (Geertz 1974).''
+
+\hfill 
+
+``There is a need in our scholarship for listening to the people we study and attempting to discover the categories that they use to understand politics.'' (Ibid, p. 519)
+
+\hfill 
+
+``We need to do more listening in the study of public opinion. We should pay attention to the social categories that people find meaningful, as opposed to the categories we presuppose are important.'' (Ibid. p. 531)
+
+\hfill 
+
+\textit{Zaller 1992:}
+
+Zaller (1992) defines elite political discourse as providing ``a depiction of reality that is sufficiently simple and vivid that ordinary people can grasp it. . . . [I]t is unavoidably selective and unavoidably enmeshed in stereotypical frames of reference that highlight only a portion of what is going on''\index{Elites}
+
+\hfill 
+
+Zaller (1992) defines predispositions as ``stable, individual-level traits that regulate the acceptance or non-acceptance of the political communication the person receives''\index{Predispositions}
+
+\hfill
+
+\textit{Walter Lippmann 1914, p. 215}
+
+``Once you touch the biographies of human beings, the notion that political beliefs are logically determined collapses like a pricked balloon.'' \index{Emotions}
+
+\hfill 
+
+\textit{Lodge and Taber, 2013, emphasis added}
+
+``citizens are rarely, \textit{we believe never}, dispassionate when thinking about politics. . . . Citizens are inclined to think what they feel, and defend these feelings through motivated reasoning processes'' (p. 149). 
+\index{Emotions}
+
+\hfill 
+
+\textit{Sydney Verba, ``The Citizen as Respondent: Sample Surveys and American Democracy''}
+
+``Surveys produce just what democracy is supposed to produce--equal representation of all citizens. The sample survey is rigorously egalitarian; it is designed so that each citizen has an equal chance to participate and an equal voice when participating.''\index{Survey}
+
+\hfill 
+
+\textit{Schudson, ``The Good Citizen''}
+
+``the model of the informed citizen... still holds a cherished place in our arrary of political values, as I think it should, but it requires some modification'' (p.309) Citizens, more realistically, ``monitor'' or ``scan'' the social environment, learning enough to be ``poised for action if action is required'' (p.311). \index{Political Knowledge} 
+
+\hfill 
+
+\textit{Philip Converse, 1975}
+
+``the most familiar fact to arise from sample surveys is that popular levels of information about public affairs are, from the point of view of an informed observer, astonishingly low'' (1975, p.79). \index{Political Knowledge} 
+
+\hfill 
+
+\textit{Paul Blumberg, 1990, p.1}
+
+``America's embarrassing little secret... is that vast numbers of Americans are ignorant, not merely of the specialized details of government which ordinary citizens cannot be expected to master, but of the most elementary political facts --- information so basic as to challenge the central tenet of democratic government itself.'' \index{Political Knowledge} 
+
+\hfill 
+
+\textit{E. E. Schattschneider, 1960, p. 135-136}
+
+\textit{Realist View:} ``It is an outrage to attribute the failures of American democracy to the ignorance and stupidity of the masses. The most disastrous shortcomings of the system have been those of the intellectuals whose concepts of democracy have been amazingly rigid and uninventive.''\index{Democracy} \index{Realism}
+
+
+
+
+
+
+
+
+\clearpage  %New page
+\printindex %Print the index here
+
+
+\end{document}
