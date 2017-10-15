@@ -6,6 +6,8 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
 # Memo
 The LaTeX Memo format is the bare-bones format for writing quick papers or letters. It is a simple .pdf output that can be used for homework assignemnts, medium length papers, or rough-draft articles. It includes some footnote formatting, section formatting, and font formatting. 
 
+This memo .tex goes into details on the packages I've used. To save on clutter, elsewhere comments are removed.
+
 # Index 
 The LaTeX Index file is a neat example of guided note-taking where I grabbed "notable quotes" from various readings; yet, as this document grows it may be difficult to find quotes per topic! Indexing can help since an organized table of contents may not account for multiple topics within a quote, and would be taxing to shuffle around quotes. 
 
@@ -19,3 +21,10 @@ What if we need to add code neatly to our LaTeX documentation? I would consider 
 If you're interested, I've included how these R sections are formatted in a LaTeX output which is ran to give you the .pdf (this is all done under the hood in R from .rnw ("sweave")). These files are a great way to present code in an organized way for readers to clearly sepearate code from text. These are also great for doing quantiative homework assignments or reports more broadly. 
 
 I've included an example lab assignment I've done in "Example.rnw" launch this with RStudio to see how this works.
+
+# BibTex and Tables of Contents
+The Bibtex .tex file should be downloaded into the same area as the .bib file. To make a .bib file on your own, simply save a new file from TeXMaker as a .bib (you can format .bib files in LaTeX or any simple text editor like Notepad(++)). 
+
+Once these are in the same location, follow the complilation instructions on the top of the .tex file to properly tell LaTeX to compile the document in a specified order. This .tex file provides instructions on a customized table of contents and sections/subsections. 
+
+The .tex document ends with a few notes on customizing bibliographies. The .bib file, if opened, provided similar details. These files are defaulted to the American Political Science Review publication standards. 
