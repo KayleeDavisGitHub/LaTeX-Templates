@@ -1,0 +1,69 @@
+% Memo Template: Compiled by Kyle Davis
+% The Ohio State University
+% For writing short paper assignments, quick letters.
+% This is minimalist; feel free to compile using 
+%  PDFLatex -> View PDF
+\documentclass[12pt]{article}
+
+\usepackage{scrextend}
+\usepackage[T1]{fontenc}
+% Math tools
+\usepackage{amsfonts, amsmath, amsthm, amssymb} 
+% Set margins
+\usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
+\usepackage{setspace}
+% Hides hyperlink red box.
+\usepackage[bookmarks = false, hidelinks]{hyperref} 
+% Aids float of tables/figures
+\usepackage{float}
+\usepackage{subcaption}
+\usepackage{siunitx}
+\usepackage[compact]{titlesec}
+% Font Formatting (american): 
+\usepackage{baskervald} 
+\usepackage[style = american]{csquotes}
+\usepackage[american]{babel}
+
+% Footnote Formatting
+\usepackage{enumitem} %Footnote Formatting
+\usepackage{listings} %Footnote Formatting
+
+\setlist{nolistsep, noitemsep}
+\setlength{\footnotesep}{1.2\baselineskip}
+\deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
+
+% Section Formatting 
+\def\ci{\perp\!\!\!\perp}
+\titleformat*{\section}{\large\bfseries}
+\titleformat*{\subsection}{\normalsize\bfseries}
+
+% To insert graphics using:: \includegraphics[scale=•]{•}
+\usepackage{graphicx}
+%\graphicspath{{ directory location of image }}
+
+
+\pagestyle{plain}
+\begin{document}
+% Comment this (%) if you prefer indents: 
+\setlength{\parindent}{0pt}
+\setcounter{page}{1}
+\singlespacing 
+      %%%%%%%%%%%% Begin Document Content %%%%%%%%%%%%
+% Header:
+\begin{center}
+\textbf{Memorandum: Title}\\
+Author
+\end{center}
+% Double spaced content:
+\doublespacing
+
+\textbf{Summary:}
+\begin{list}{}{}
+\item[a.] 
+\item[b.]
+\end{list}
+
+Memos are typically concise and bold. Reaching a point, and moving on with supporting evidence or examples --- briefly stated. 
+
+
+\end{document}
