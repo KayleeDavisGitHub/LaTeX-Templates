@@ -1,6 +1,9 @@
+% Load in R "sweave" (.rnw) using setting "knitr"
+% Kyle Davis; Ohio State University
 
 \documentclass[12pt]{article}
 
+% Packages used:
 \usepackage{scrextend}
 \usepackage[T1]{fontenc}
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % Math tools
@@ -27,6 +30,7 @@
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
+% For Math E Operator if needed.
 \DeclareMathOperator{\E}{\mathbb{E}}
 
 \pagestyle{plain}
@@ -43,6 +47,9 @@ In collaberation with Andrew Goodhart.
 
 Creating three DGPs:
 
+%<<label, if you want it to print code output, messages, or warnings>> 
+% Also consider tidy=TRUE for code wrapping and spacing. For graphs I found out.width to be helpful at editing.
+% @
 <<DGP, echo=TRUE, message=FALSE, warning=FALSE>>=
 library(caret)
 library(MASS)
