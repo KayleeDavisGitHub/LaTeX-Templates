@@ -1,12 +1,11 @@
-% Memo Template: Compiled by Kyle Davis
-% The Ohio State University
-% For writing short paper assignments, quick letters.
-% This is minimalist; feel free to compile using 
-%  PDFLatex -> View PDF
+%%  Memo Template: Compiled by Kyle Davis
+%    The Ohio State University
+%       - For writing short paper assignments, quick letters.
+%    This is minimalist; feel free to compile using: 
+%! PDFLatex -> View PDF
+%--------------------------------------------------------------------------------------------
 \documentclass[12pt]{article}
 
-\usepackage{scrextend}
-\usepackage[T1]{fontenc}
 % Math tools
 \usepackage{amsfonts, amsmath, amsthm, amssymb} 
 % Set margins
@@ -17,14 +16,15 @@
 % Aids float of tables/figures
 \usepackage{float}
 \usepackage{subcaption}
-\usepackage{siunitx}
+
+% Font Formatting (american):
 \usepackage[compact]{titlesec}
-% Font Formatting (american): 
 \usepackage{baskervald} 
 \usepackage[style = american]{csquotes}
 \usepackage[american]{babel}
 
 % Footnote Formatting
+\usepackage{scrextend}
 \usepackage{enumitem} %Footnote Formatting
 \usepackage{listings} %Footnote Formatting
 
@@ -41,14 +41,15 @@
 \usepackage{graphicx}
 %\graphicspath{{ directory location of image }}
 
-
+%--------------------------------------------------------------------------------------------
 \pagestyle{plain}
 \begin{document}
 % Comment this (%) if you prefer indents: 
 \setlength{\parindent}{0pt}
 \setcounter{page}{1}
 \singlespacing 
-      %%%%%%%%%%%% Begin Document Content %%%%%%%%%%%%
+
+%-------------------------------------------Document Content---------------------------------
 % Header:
 \begin{center}
 \textbf{Memorandum: Title}\\
@@ -57,6 +58,7 @@ Author
 % Double spaced content:
 \doublespacing
 
+% Add a list:
 \textbf{Summary:}
 \begin{list}{}{}
 \item[a.] 
@@ -65,5 +67,5 @@ Author
 
 Memos are typically concise and bold. Reaching a point, and moving on with supporting evidence or examples --- briefly stated. 
 
-
+%--------------------------------------------------------------------------------------------
 \end{document}
