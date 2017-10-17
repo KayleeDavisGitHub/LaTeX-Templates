@@ -1,23 +1,28 @@
-% Kyle Davis, Ohio State University
+%% Kyle Davis, Ohio State University
 
-% Using bibtex consider the following:
-% 1. you must have your .bib file and this working LaTeX document in the same location on your PC, I reccomend a seperate folder, neatly organized for your project.
-
-% Consider setting up a Quick Build shortcut:
-% Options -> Configure TexMaker -> Quick Build ->
-% User Wizard -> Set order:: Latex, bibtex, pdflatex, pdflatex, pdfViewer. -> OK
-
-% Then you can use quick build (up top) to generate updates and run  your bibtex!
-
+%  Using bibtex consider the following:
+%! 1. you must have your .bib file and this working LaTeX document in the same location on your PC,
+%     I reccomend a seperate folder, neatly organized for your project.
+%
+%! 2. Consider setting up a Quick Build shortcut:
+%  Options -> Configure TexMaker -> Quick Build ->
+%  User Wizard -> Set order:: Latex, bibtex, pdflatex, pdflatex(again),
+%               pdfViewer. -> OK
+%
+% Then you can use quick build (up top) to generate updates and run your file!
+%------------------------------ Preamble -----------------------------------------------
 \documentclass[12pt]{article}
+% Packages used. Explained in some more details at:
+% https://github.com/KyleDavisGithub/LaTeX-Templates/blob/master/Memo-template.tex
 
-% Packages used.
 \usepackage{scrextend}
 \usepackage[T1]{fontenc}
+% tex tools:
 \usepackage{graphicx, fullpage, natbib, float, relsize, epsfig} 
-%tex tools
+% Math tools:
+\usepackage{textcomp} % Just for tilda's I think
 \usepackage{amsfonts, amsmath, amsthm, amssymb, mathtools} 
-% Math tools
+% Margins:
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
 \usepackage{setspace}
 \usepackage[bookmarks = false, hidelinks]{hyperref} 
@@ -32,15 +37,16 @@
 \usepackage{enumitem}
 \usepackage[style = american]{csquotes}
 \usepackage[american]{babel} % Font
-\usepackage{textcomp} % Just for tilda's I think
 \usepackage{verbatim} 
 \usepackage{wrapfig}  % Wrap Figures and caption easier
 \usepackage{caption}
 
-% For longer projects, consider to-do notes for workflow
+%--------------------------- Formatting --------------------------------------------------------
+%% For longer projects, consider to-do notes for workflow
 % Very helpful for picking up where you left off!
 \usepackage{todonotes}
-
+% \todo 
+% https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes
 
 % Footnote Formatting
 \setlist{nolistsep, noitemsep}
@@ -56,7 +62,7 @@
 \addto\captionsamerican{ \renewcommand*\contentsname{Navigation} }
 
 
-%%%%%%%%%%%%%%%%%%% Begin: 
+%------------------------------- Document ------------------------------------------------
 
 \begin{document}
 %\graphicspath{ path for images/figures } 
@@ -64,29 +70,25 @@
 \setlength{\parindent}{1cm} %1cm indent
 
 
-
-
-\thispagestyle{empty}
-\noindent \textbf{Introduction}\\
+% Doesn't apply page number
+\thispagestyle{empty}     
+\noindent \textbf{Introduction}\\ 
 \hfill \\
 Some Introduction before the table of contents. 
 
 \hfill \\
-
-% Put this on the next page:
+% To put this on the next page:
 % \clearpage 
 
 % Table of Contents will read section titles and subtitles and list them alongside their associated page number.
 \tableofcontents
-% What's cool is that as your document grows you can simply click the TOC to get to where you want to go!
-
+% What's cool is that as your document grows you can simply click the TOC page to get to where you want to go!
 
 %page style empty eliminates page count. The count I've set to begin later when it's page 1: onward.
 \thispagestyle{empty}
 
 
-
-
+%------------------------------- Main Bod y------------------------------------------------
 
 \clearpage
 \setcounter{page}{1}
@@ -109,36 +111,39 @@ Ending text which will cite \citep{cary1967influence}.
 
 \hfill \\
 
-
+% To add a TOC item: 
 \addcontentsline{toc}{section}{Optional Sub-Section}
 \noindent \textbf{Optional Sub-Section to be Paired With Table of Contents Line:}
 
-This text will cite things a little differently, \cite{cary1967influence}. Note these citation codes are different, one just uses parentheses and the other will cite the authors last name along the year in parentheses. 
+% Citing via .bib:
+This text will cite things differently \cite{cary1967influence}. Note these citation codes are different, one just uses parentheses and the other will cite the authors last name along the year in parentheses. 
 
 
 
 
+%-------------------------------Bibliography------------------------------------------------
 
-% next page for bib page:
 \clearpage
-% Groups bibtex cites:
+% Groups bibtex cite options:
 \begingroup
 	\nocite{*}
 	
 	%\setlength{\bibsep}{12pt}
 	
-	%To double space and stretch all cites:
+% To double space and stretch all cites:
 	%\setstretch{2}
 	
-	% Have your file in the same location as this tex document, then just name the .bib file here:
+% Have your file in the same location as this tex document, then just name the .bib file here:
 	\bibliography{BibFile}
 	
-	%There's a ton of different options here, I prefer APSR but you can change this to anything! It will code everything automatically.
+% There's a ton of different options here, I prefer APSR but you can change this to anything!
+%  It will code everything automatically.
 	\bibliographystyle{apsr}
 	
 \endgroup
 
-              %%% Final Thoughts: %%%
+%-------------------------------Final Thoughts------------------------------------------------
+
 
 % Consider keeping a .bib file for projects and papers for a few different reasons:
 
@@ -149,6 +154,6 @@ This text will cite things a little differently, \cite{cary1967influence}. Note 
 % Or consider keeping all of the articles you read in a .bib file where you can have notes on everything, and can easily cite when needed.
 
 
-% end
+%---------------------------------------------------------------------------------------------
 \end{flushleft}
 \end{document}
