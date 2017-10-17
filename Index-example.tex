@@ -1,11 +1,12 @@
-% Index Related PDF Notes-space
-% Kyle Davis, Ohio State University
-% To compile, consider the following quick-build setup:
-% Options -> Configure TexMaker -> Quick Build ->
-% User "wizard" -> Select list of commands for "quick Build   	to run" in this order: LaTeX, MakeIndex, 					PdfLatex(twice), View PDF.
+%% Index Related PDF Notes-space
+%% Kyle Davis, Ohio State University
+%! To compile, consider the following quick-build setup:
+%   Options -> Configure TexMaker -> Quick Build ->
+%   User "wizard" -> Select list of commands for "quick Build   	to run" in this order: LaTeX, MakeIndex,
+%   PdfLatex(twice), View PDF.
 % This will make your document, index, then run pdflatex twice (which does a lot of debugging) and then shows you the pdf.
 \documentclass[12pt]{article}
-\usepackage{makeidx} %This makes the pdf.
+\usepackage{makeidx} % This package helps in making an index
 
 % package notes removed, view Memo latex notes for details
 % https://github.com/KyleDavisGithub/LaTeX-Templates
@@ -35,20 +36,18 @@
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
-
-
-
-
+%------------------------------ Document -----------------------------------------------
 \pagestyle{plain}
-\makeindex %Make the index
+\makeindex % Make the index
 \begin{document}
 
 \setlength{\parindent}{0pt}
 \setcounter{page}{1}
 \singlespacing 
 
-% some course notes utilizing index for quick reference.
+% Some reading notes utilizing index for quick reference.
 % These are to only be taken as examples.
+% Note how we \index
 \section*{Notable Quotes: Political Communication}
 
 \textit{Lazarsfeld et al. 1944, p. 151}
@@ -143,12 +142,9 @@ Zaller (1992) defines predispositions as ``stable, individual-level traits that 
 
 
 
-
-
-
-
-\clearpage  %New page
-\printindex %Print the index here
+%------------------------------ Index -----------------------------------------------
+\clearpage  % New page
+\printindex % Print the index here
 
 
 \end{document}
