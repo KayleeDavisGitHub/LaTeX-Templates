@@ -1,6 +1,8 @@
 % Load in R "sweave" (.rnw) using setting "knitr"
 % Kyle Davis; Ohio State University
 
+%-------------------------------------------------------------------------------
+
 \documentclass[12pt]{article}
 
 % Packages used:
@@ -33,6 +35,8 @@
 % For Math E Operator if needed.
 \DeclareMathOperator{\E}{\mathbb{E}}
 
+%-------------------------------------------------------------------------------
+
 \pagestyle{plain}
 \begin{document}
 
@@ -47,9 +51,12 @@ In collaberation with Andrew Goodhart.
 
 Creating three DGPs:
 
-%<<label, if you want it to print code output, messages, or warnings>> 
-% Also consider tidy=TRUE for code wrapping and spacing. For graphs I found out.width to be helpful at editing.
-% @
+%! <<label, if you want it to print code output, messages, or warnings>> 
+%  Also consider tidy=TRUE for code wrapping and spacing. For graphs I found out.width to be helpful at editing.
+%  @
+
+% The document will continue, following a machine learning assignment as example.
+
 <<DGP, echo=TRUE, message=FALSE, warning=FALSE>>=
 library(caret)
 library(MASS)
@@ -140,7 +147,8 @@ train.data.3.Low  <- data.3.Low[501:2000,]
 \begin{centering}
 <<enet, warning=FALSE, message=FALSE,echo=TRUE, out.width='5in'>>=
 
-### All of these elastic net lambda's for the assignment have been narrowed from 0-200 and downward.
+### All of these elastic net lambda's for the assignment have been narrowed from
+#   0-200 and downward.
 
 ## Elastic Net:
 enet.Bal <- train(Y~., method="glmnet",
@@ -570,6 +578,7 @@ post(ptree.low,
 Overall, regression trees (here they are classification trees) can be used to see which predictors lead our classifications, and similar to how elastic nets will bring some predictors to zero we can ``prune'' these observations and vizualize this process better. We see that in our low predictive data we have so many observations that have high error that our tree becomes heavily pruned. Reporting these over other methods may be more intuitive for readers and reviewers.
 
 
+%-------------------------------------------------------------------------------
 
 \end{flushleft}
 \end{document}
