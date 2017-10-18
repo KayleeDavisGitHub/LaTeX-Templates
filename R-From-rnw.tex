@@ -1,3 +1,12 @@
+%% This is an .tex file generated from R's .rnw file creation ("sweave" but using knitr).
+%  Kyle Davis; Ohio State University
+%! Compiling document will have to include knitr in quickbuild.
+%   - Alternatively, generate .rnw in R and a lot of what is displayed here happens
+%     "under the hood." But interesting to see/ manipulate!
+%     The example .tex here is just a minimal example.
+
+%---------------------------------- .rnw Preamble -----------------------------
+
 \documentclass[12pt]{article}\usepackage[]{graphicx}\usepackage[]{color}
 %% maxwidth is the original width if it is less than linewidth
 %% otherwise use linewidth (to make sure the graphics do not exceed the margin)
@@ -11,7 +20,11 @@
 }
 \makeatother
 
-%The Default Colors for R Code from .rnw:
+%----------------------- Knitr (R) Coding Settings ----------------------------
+
+% The Default Colors for R Code from .rnw:
+% These will generate the background frame and what highlights to
+% use for code.
 \definecolor{fgcolor}{rgb}{0.345, 0.345, 0.345}
 \newcommand{\hlnum}[1]{\textcolor[rgb]{0.686,0.059,0.569}{#1}}%
 \newcommand{\hlstr}[1]{\textcolor[rgb]{0.192,0.494,0.8}{#1}}%
@@ -49,12 +62,11 @@
 \definecolor{errorcolor}{rgb}{1, 0, 0}
 \newenvironment{knitrout}{}{} % an empty environment to be redefined in TeX
 
-% Helps font in typewritter (tt)
 \usepackage{alltt}
-% The above is all generated automatically through default
-% .rnw files in R.
+% The above is all generated automatically through default .rnw files in R.
+%------------------------- Added Packages ------------------------------------
 
-% Latex Code added through .rnw in R:
+% Latex Code added through .rnw in R on my end:
 \usepackage{scrextend}
 \usepackage[T1]{fontenc}
 \usepackage{amsfonts, amsmath, amsthm, amssymb} % Math tools
@@ -81,14 +93,15 @@
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
-% This is a function for a mathmatical E format:
+% This is a function for a mathmatical 'E' format:
 \DeclareMathOperator{\E}{\mathbb{E}}
+
+%---------------------------- Document --------------------------------------
 
 \pagestyle{plain}
 \IfFileExists{upquote.sty}{\usepackage{upquote}}{}
 \begin{document}
 
-%Begin:
 \begin{center}
 \textbf{Lab Assignment: R Documentation}\\
 Author\\
@@ -99,9 +112,14 @@ Author\\
 
 We know the mean of $x$ but the mean of $y$ if $y$ (\textit{focus}) is defined as $y = \frac{1}{x}$ then $y$ is likely to be $\frac{1}{10}$ given that $x=10$. 
 
+%% Note knitr's formatting:
+
+% Begins knit, colors the background (kframe in preamble), and uses package "alltt"
 \begin{knitrout}
 \definecolor{shadecolor}{rgb}{0.969, 0.969, 0.969}\color{fgcolor}\begin{kframe}
 \begin{alltt}
+
+% Uses defined highlight (hl) codes for various types of R code:
 \hlkwd{set.seed}\hlstd{(}\hlnum{8675309}\hlstd{)}
 \hlstd{N} \hlkwb{<-} \hlnum{1000}\hlstd{; S} \hlkwb{<-} \hlnum{1e7}
 \hlstd{x} \hlkwb{<-} \hlkwd{rnorm}\hlstd{(N,} \hlkwc{mean}\hlstd{=}\hlnum{10}\hlstd{,} \hlkwc{sd}\hlstd{=}\hlnum{1}\hlstd{)}
@@ -110,6 +128,7 @@ We know the mean of $x$ but the mean of $y$ if $y$ (\textit{focus}) is defined a
 
 \hlkwd{mean}\hlstd{(mean_x);} \hlnum{1}\hlopt{/}\hlkwd{mean}\hlstd{(mean_x)}
 \end{alltt}
+% Verbatim output from R:
 \begin{verbatim}
 ## [1] 9.972921
 ## [1] 0.1002715
@@ -117,9 +136,11 @@ We know the mean of $x$ but the mean of $y$ if $y$ (\textit{focus}) is defined a
 \end{kframe}
 \end{knitrout}
 
-\textbf{Question 1:}
+\noindent \textbf{Question 2: [...]}
 
 
-
+%---------------------------------- End ----------------------------------------
+% One thing to take from this is that by messing around with the highlight color
+% values can produce (frankly) nicer code throughout your latex output. 
 \end{flushleft}
 \end{document}
