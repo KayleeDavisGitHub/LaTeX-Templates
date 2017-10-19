@@ -33,10 +33,10 @@
 \usepackage{subcaption}
 \usepackage{siunitx}
 \usepackage[compact]{titlesec}
-\usepackage{baskervald} % Font
+\usepackage{baskervald}
 \usepackage{enumitem}
 \usepackage[style = american]{csquotes}
-\usepackage[american]{babel} % Font
+\usepackage[american]{babel} 
 \usepackage{verbatim} 
 \usepackage{wrapfig}  % Wrap Figures and caption easier
 \usepackage{caption}
@@ -116,7 +116,8 @@ Ending text which will cite \citep{cary1967influence}.
 \noindent \textbf{Optional Sub-Section to be Paired With Table of Contents Line:}
 
 % Citing via .bib:
-This text will cite things differently \cite{cary1967influence}. Note these citation codes are different, one just uses parentheses and the other will cite the authors last name along the year in parentheses. 
+This text will cite things differently \cite{cary1967influence}. Note these citation codes are different, one just uses parentheses and the other will cite the authors last name along the year in parentheses. Added example \citep{waltz2001man}. Multiple authors \citep{hibbing2013predisposed}.
+
 
 
 
@@ -126,6 +127,8 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 \clearpage
 % Groups bibtex cite options:
 \begingroup
+    % If commented out, this will not included references in
+    % the references page if not \cite'ed in paper.
 	\nocite{*}
 	
 	%\setlength{\bibsep}{12pt}
@@ -139,7 +142,11 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 % There's a ton of different options here, I prefer APSR but you can change this to anything!
 %  It will code everything automatically.
 	\bibliographystyle{apsr}
-	
+	% Or; apa
+	%   ; plain
+	%   ; apsr
+	%   ; humannat
+	%   ; chicago (?)
 \endgroup
 
 %-------------------------------Final Thoughts------------------------------------------------
