@@ -6,18 +6,17 @@
 %
 %! 2. Consider setting up a Quick Build shortcut:
 %  Options -> Configure TexMaker -> Quick Build ->
-%  User Wizard -> Set order:: Latex, bibtex, pdflatex, pdflatex(again),
-%               pdfViewer. -> OK
+%  User Wizard -> Set order:: Latex, bibtex, pdflatex, pdflatex(again), pdfViewer. -> OK           
 %
 % Then you can use quick build (up top) to generate updates and run your file!
-%------------------------------ Preamble -----------------------------------------------
+%--------------------- Preamble ---------------------
 \documentclass[12pt]{article}
 % Packages used. Explained in some more details at:
 % https://github.com/KyleDavisGithub/LaTeX-Templates/blob/master/Memo-template.tex
 
 \usepackage{scrextend}
 \usepackage[T1]{fontenc}
-% tex tools:
+%! tex tools: including "natbib" for our bibliography
 \usepackage{graphicx, fullpage, natbib, float, relsize, epsfig} 
 % Math tools:
 \usepackage{textcomp} % Just for tilda's I think
@@ -41,7 +40,7 @@
 \usepackage{wrapfig}  % Wrap Figures and caption easier
 \usepackage{caption}
 
-%--------------------------- Formatting --------------------------------------------------------
+%--------------------- Formatting ------------------------------
 %% For longer projects, consider to-do notes for workflow
 % Very helpful for picking up where you left off!
 \usepackage{todonotes}
@@ -62,7 +61,7 @@
 \addto\captionsamerican{ \renewcommand*\contentsname{Navigation} }
 
 
-%------------------------------- Document ------------------------------------------------
+%-------------------- Document ----------------------------
 
 \begin{document}
 %\graphicspath{ path for images/figures } 
@@ -88,7 +87,7 @@ Some Introduction before the table of contents.
 \thispagestyle{empty}
 
 
-%------------------------------- Main Body ------------------------------------------------
+%---------------------- Main Body --------------------------
 
 \clearpage
 \setcounter{page}{1}
@@ -122,7 +121,7 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 
 
 
-%-------------------------------Bibliography------------------------------------------------
+%-----------------------Bibliography----------------------------
 
 \clearpage
 % Groups bibtex cite options:
@@ -149,7 +148,7 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 	%   ; chicago (?)
 \endgroup
 
-%-------------------------------Final Thoughts------------------------------------------------
+%---------------- Final Thoughts ----------------------
 
 
 % Consider keeping a .bib file for projects and papers for a few different reasons:
@@ -161,6 +160,6 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 % Or consider keeping all of the articles you read in a .bib file where you can have notes on everything, and can easily cite when needed.
 
 
-%---------------------------------------------------------------------------------------------
+%-------------------------------------------------------
 \end{flushleft}
 \end{document}
