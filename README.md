@@ -36,3 +36,8 @@ I've included a example lab assignment I've created labeled "Example.rnw" launch
 ## Math, Tables, and Figures.
 This is a LaTeX example for building various equations, tables, and figures (including theory plots). This is, arguably, one of the main contributions of a code-based editor. 
 
+## Dark LaTeX Slides
+This folder has a complex customized dark LaTeX format and a simple .tex dark LaTeX slides format. Both use `beamer`.
+
+## Simple CV
+A simplified working CV example that can be customized. If you're looking for inspiration, check out [Awesome-CV](https://github.com/posquit0/Awesome-CV).
