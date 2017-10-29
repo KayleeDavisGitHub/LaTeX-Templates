@@ -1,18 +1,27 @@
+% Simple.CV.tex  from: Kyle Davis
+% Ohio State University
+% MailKyleDavis@gmail.com
+%
+% The purpose of this LaTeX document is to offer an easy-to-use LaTeX CV
+% That can be easily expanded upon.
+
 \documentclass[12pt]{article}
 
-\usepackage{setspace, graphicx, fullpage, amssymb, amsmath, epsfig, natbib, array, multirow, hyperref,subfigure, float, relsize, amsfonts, bm, mathtools} %useful math stuff
+\usepackage{setspace, graphicx, fullpage, amssymb, amsmath, epsfig, natbib,
+array, multirow, hyperref, subfigure, float, relsize, amsfonts, bm, mathtools} 
+% useful math stuff, many of these packages won't be used here
+% Note natbib here for .bibtex.
 
+% Typeface; margins, and column settings: 
 \usepackage[margin=0.75in]{geometry} 
 \newcolumntype{d}[1]{D{.}{.}{#1}} 
 \usepackage[english]{babel}
 \usepackage[document]{ragged2e}
-\usepackage[utf8]{inputenc} %for page numbering options
-
+\usepackage[utf8]{inputenc}
 
 
 \normalsize 
 \begin{document}
-\graphicspath{Data Files}
 
 \begin{flushleft}
 \setlength{\parindent}{.5cm}
@@ -20,8 +29,8 @@
 {\LARGE \textbf{Name N. Name}} \\
 \noindent Important Person; Important University\\
 
-
 \begin{center}
+% \makebox adds a line across the page
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 
 Department of Importance, Important University, City, State.\\
@@ -31,17 +40,14 @@ Website\\
 \noindent\makebox[\linewidth]{\rule{\paperwidth}{0.4pt}}
 \end{center}
 
-
+%% Education Section:
 \noindent \textbf{Education}\\
-\noindent \hspace{.3cm} Present \hspace{.1cm} \textbf{ Important University} \hspace{1.4cm}  Ph.D In Everything \\
+% Time  ;  University  ; Degree
 
-
-
-
+% I use \hfill \\ here to adjust spacing between sections
 \hfill \\
 \noindent \textbf{Academic Funding and Rewards}\\
 \hfill \\
-
 
 
 
@@ -54,18 +60,23 @@ Website\\
 \hfill \\
 \noindent \textbf{Publications}\\
 \hfill \\
-%\noindent \textit{Refereed Publications:}\\
-%\hfill \\
- 
- 
- %Consider bibtex here.
+
+ % Consider bibtex here for including your publications with some specified 
+ % bibliography style.
 
 
+\hfill \\
+\noindent \textit{Refereed Publications:}\\
+\hfill \\
+ 
+ 
 
 
 \hfill \\
 \noindent \textbf{Conferences}\\
+\hfill \\
 
+% You can use list to organize conference attendances.
 \begin{list}{}{}
 \item[2017]
 
