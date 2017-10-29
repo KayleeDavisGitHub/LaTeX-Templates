@@ -19,7 +19,7 @@
 \usepackage{float}
 \usepackage{subcaption}
 
-% Font Formatting (american):
+% Typeface Formatting:
 \usepackage[compact]{titlesec}
 \usepackage{baskervald} 
 \usepackage[style = american]{csquotes}
@@ -27,8 +27,8 @@
 
 % Footnote Formatting
 \usepackage{scrextend}
-\usepackage{enumitem} %Footnote Formatting
-\usepackage{listings} %Footnote Formatting
+\usepackage{enumitem} 
+\usepackage{listings} 
 
 \setlist{nolistsep, noitemsep}
 \setlength{\footnotesep}{1.2\baselineskip}
@@ -39,7 +39,7 @@
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
-% To insert graphics using:: \includegraphics[scale=•]{•}
+% To insert graphics using:: \includegraphics[scale=â€¢]{â€¢}
 \usepackage{graphicx}
 %\graphicspath{{ directory location of image }}
 
@@ -49,8 +49,8 @@
 \usepackage{tkz-graph}
 \usetikzlibrary{shapes,arrows}
 \usepackage{caption}
-\newcommand*{\h}{\hspace{5pt}}% for indentation
-\newcommand*{\hh}{\h\h}       % double indentation
+\newcommand*{\h}{\hspace{5pt}} % for indentation
+\newcommand*{\hh}{\h\h}        % double indentation
 
 %---------------------------------------------------------
 \pagestyle{plain}
@@ -107,13 +107,13 @@ t = \frac{X-\mu}{\frac{s}{\sqrt{(n)}}}
 % Subscript and Superscript:
 \textit{Error Assumption Equation}
 \begin{equation}
-\mathlarger{  \epsilon_i  \thicksim \mathcal{N}(0, \sigma^2)     }
+\mathlarger{  \epsilon_i  \thicksim \mathcal{N}(0, \sigma^2) }
 \end{equation}
 
 % mean (\bar) and having both sub/super scripts. 
 \textit{Calculating Explained Variance}
 \begin{equation}
-\mathlarger{ \text{R}^2 = 1 - \frac{\text{RSS}}{\text{TSS}} = \frac{\Sigma \epsilon^{2}_i}{\Sigma\left(Y_i - \bar{Y}\right)^2}          }
+\mathlarger{ \text{R}^2 = 1 - \frac{\text{RSS}}{\text{TSS}} = \frac{\Sigma \epsilon^{2}_i}{\Sigma\left(Y_i - \bar{Y}\right)^2} }
 \end{equation}
 
 % Classifying cases, having text.
@@ -140,7 +140,7 @@ t = \frac{X-\mu}{\frac{s}{\sqrt{(n)}}}
 
 \textit{Poisson PDF}
 \begin{equation}
-\mathlarger{ \frac{\lambda^k e^{-\lambda}}{k!}     }
+\mathlarger{ \frac{\lambda^k e^{-\lambda}}{k!} }
 \end{equation}
 
 \textit{AIC and BIC}
@@ -163,7 +163,7 @@ logit^{-1} (\theta_{k+1}) - logit^{-1}(\theta_k)
 \end{equation}
 
 \begin{equation}
- p_{ij} = \frac{exp(\eta_{ij})}{1+ \Sigma^{J}_{j=2} exp (\eta_{ij})   }     
+ p_{ij} = \frac{exp(\eta_{ij})}{1+ \Sigma^{J}_{j=2} exp (\eta_{ij}) }     
 \end{equation}
 
 % Including how to not number: sections:
@@ -182,7 +182,7 @@ logit^{-1} (\theta_{k+1}) - logit^{-1}(\theta_k)
 \clearpage
 \textbf{Tables}:
 
-The following two examples are using R's \texttt{texreg} package. This R package will build \LaTeX~ code for tables depending on the model and code within R. That package's help file is useful in specifying the contents for the tables here, but we can change the tables within \LaTeX~ as well:
+The following two examples are using R's \texttt{texreg} package. This R package will build \LaTeX~ code for tables depending on the model and code within R. That package's help file is useful in specifying the contents for the tables here, but we can change the tables within \LaTeX~ as well if we needed:
 
 % Begin table, setting "float" position to "here!" 
 \begin{table}[h!]
@@ -311,9 +311,7 @@ Num.\ obs.         & 314       & 314       & 314       \\
 \end{tikzpicture} 
 \end{center}
 
-
 \hfill 
-
 
 % From:
 % Author: Stefan Kottwitz
@@ -332,7 +330,9 @@ Num.\ obs.         & 314       & 314       & 314       \\
 \end{tikzpicture}
 \end{center}
 
-
+% Each of these have gotten me through most causal graphing models
+% and other diagrams I've needed so far. But consider a large
+% flowchart for experiments: 
 
 
 % A CONSORT-style flowchart of a randomized controlled trial
@@ -456,5 +456,6 @@ Num.\ obs.         & 314       & 314       & 314       \\
 
 % Hope these help to reverse engineer and begin graphing your own stuff in LateX
 %---------------------------------------------------------
+
 \end{document}
 
