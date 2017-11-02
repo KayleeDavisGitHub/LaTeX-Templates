@@ -41,3 +41,7 @@ This folder has a complex customized dark LaTeX format and a simple .tex dark La
 
 ## Simple CV
 A simplified working CV example that can be customized. If you're looking for inspiration, check out [Awesome-CV](https://github.com/posquit0/Awesome-CV).
+
+
+## Other Resources:
+The journal "Science" has a pdf on how to submit articles and format documents in LaTeX found [here](http://www.sciencemag.org/site/feature/contribinfo/prep/TeX_help/scifile.pdf). 
