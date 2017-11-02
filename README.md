@@ -45,3 +45,9 @@ A simplified working CV example that can be customized. If you're looking for in
 
 ## Other Resources:
 The journal "Science" has a pdf on how to submit articles and format documents in LaTeX found [here](http://www.sciencemag.org/site/feature/contribinfo/prep/TeX_help/scifile.pdf). 
+
+Other political science journals accept LaTeX submissions or .pdf submissions. This includes the American Political Science Review who list an easy LaTeX template [here](https://www.overleaf.com/latex/templates/american-political-%20science-review-aspr-submission-%20template/fxffppspqczt#.WftFOmhSxPa). The American Political Science Association journal doesn't care, their guidelines for submission can be found [here](https://ajps.org/guidelines-for-manuscripts/). The Journal of Politics accepts .pdf and nearly every methodological journal (like Political Analysis) will accept the .tex submission as well. Journals like "Political Communication" accept .pdf files but "prefer" Word [as found here](http://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=upcp20).
+
+Overall, many top journals accept .pdf documents. For journals that have not caught up they either will catch up with technology or you can simply convert your .pdf to a Word document any time. On their end, many journals and publishing houses use LaTeX to format submissions anyways. 
+
+
