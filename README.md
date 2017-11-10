@@ -1,4 +1,4 @@
-# LaTeX-Templates
+### LaTeX-Templates
 
 ## What's here?
 Various LaTeX Templates and Tutorials. Here you will find the .tex files to learn various programs and intutions in LaTeX. Each .tex file will have detailed instructions in the preamble for beginners to understand some of the intuition behind LaTeX (and to more easily customize each format). For a quick-view of what you will learn, see the associated .pdf. 
@@ -31,7 +31,8 @@ What if we need to add code neatly to our LaTeX documentation? I would consider 
 
 If you're interested, I've included how these R sections are formatted in a LaTeX output which is ran to give you the .pdf (this is all done under the hood in R from .rnw ("sweave")). These files are a great way to present code in an organized way for readers to clearly sepearate code from text. These are also great for doing quantiative homework assignments or reports more broadly. 
 
-I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works.
+I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works. To customize your code output in .rnw see the various templates [here](http://animation.r-forge.r-project.org/knitr/) and how to implement them [here]( https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw). 
+
 
 ## Math, Tables, and Figures.
 This is a LaTeX example for building various equations, tables, and figures (including theory plots). This is, arguably, one of the main contributions of a code-based editor. 
