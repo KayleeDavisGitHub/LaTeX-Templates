@@ -51,4 +51,3 @@ Other political science journals accept LaTeX submissions or .pdf submissions. T
 
 Overall, many top journals accept .pdf documents. For journals that have not caught up they either will catch up with technology or you can simply convert your .pdf to a Word document any time. On their end, many journals and publishing houses use LaTeX to format submissions anyways. 
 
-
