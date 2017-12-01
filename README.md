@@ -86,5 +86,7 @@ Some adacademic journals do not allow LaTeX submissions depending upon the acade
 
 Of course even if a journal doesn't take .pdf submissions it doesn't mean we cannot utilize LaTeX! We can still make slides, improve workflow, manage our CV, and build our bibliographies and other research materials within LaTeX. 
 
+If you must have a .doc for a publication or other reason, consider a free online converter found [here](http://pdf2doc.com/). Simply upload your .pdf and download your Word .doc. Be warned that a lot of the benefits gained from LaTeX (Math, tables, figures, complex formatting) do not transfer over well into Word. I have tested my "Memo" LaTeX formatting in the converter and it transfers over fairly well. 
+
 ### Licensing
 The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/3.0/us/deed.en_US). Please check licensing information for underlying LaTeX and R source coding. Be sure to cite package and coding content creators when applicable. 
