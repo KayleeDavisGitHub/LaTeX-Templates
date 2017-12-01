@@ -1,53 +1,87 @@
-### LaTeX-Templates
 
-## What's here?
-Various LaTeX Templates and Tutorials. Here you will find the .tex files to learn various programs and intutions in LaTeX. Each .tex file will have detailed instructions in the preamble for beginners to understand some of the intuition behind LaTeX (and to more easily customize each format). For a quick-view of what you will learn, see the associated .pdf. 
+# LaTeX-Templates
 
-Built in [TeXMaker](http://www.xm1math.net/texmaker/). 
 
 Questions? Feel free to email me at MailKyleDavis@gmail.com
 
-## Memo
-The LaTeX Memo format is the bare-bones format for writing quick papers or letters. It is a simple .pdf output that can be used for homework assignemnts, medium length papers, or rough-draft articles. It includes some footnote formatting, section formatting, and font formatting. 
 
-This memo .tex goes into details on the packages I've used. To save on clutter, elsewhere comments are removed or condensed.
 
-## BibTex and Tables of Contents
+
+
+### Table of contents
+
+  * [What's TeXMaker?](#What's-TeXMaker?)
+  * [What's Here?](#What's-Here)
+    * [Memo](#Memo)
+    * [BibTex and Tables of Contents](#BibTex-and-Tables-of-Contents)
+    * [Index](#Index)
+    * [LaTeX in R from .rnw](#R-From-.rnw)
+    * [Math, Tables, and Figures](#Math-Tables-and-Figures)
+    * [Dark LaTeX Slides](#Dark-LaTeX-Slides)
+    * [Simple CV](#Simple-CV)
+  * [Journal Standards](#Journal-Standards)
+  
+#### What's TeXMaker?
+LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math.net/texmaker/). Which, when files are loaded, look like this:
+
+  ![ ](https://raw.githubusercontent.com/KyleDavisGithub/LaTeX-Templates/master/Latex.png)
+  
+On the left of TeXMaker we have some useful buttons that will add the code for various symbols into the black coding box in the middle of the screen. To the right we have the .pdf viewer to see our output when we compile. To compile our code into our .pdf we can use `Quick Build` opitions and other compiling options that we can manage through `Options -> Configure TexMaker`. The coding examples listed here will often include these needed specifications at the top of each coding section in the "preamble."
+ 
+#### What's here?
+Various LaTeX templates and materials. Here you will find the .tex files to learn various things you can do in LaTeX. Each .tex file will have detailed instructions in the preamble for beginners to understand some of the intuition behind LaTeX (and to more easily customize each format). See the above .pdf's for what the output will look like. Feel free to borrow this code and make it your own! 
+
+#### Memo
+The LaTeX Memo format is the bare-bones format for writing quick papers or letters. It is a simple .pdf output that can be used for homework assignemnts, medium length papers, or rough-draft articles. It includes some footnote formatting, section formatting, and font formatting. I use this as a first-pass at about 90% of the things I write.
+
+This memo .tex above goes into details on the packages I've used. To save on clutter, elsewhere comments are removed or condensed.
+
+#### BibTex and Tables of Contents
 The Bibtex .tex file should be downloaded into the same area as the .bib file. To make a .bib file on your own, simply save a new file from TeXMaker as a .bib (you can format these .bib files in LaTeX or any simple text editor like [Notepad(++)](https://notepad-plus-plus.org/) ). 
 
 Once these are in the same location, follow the complilation instructions on the top of the .tex file to properly tell LaTeX to compile the document in a specified order. This .tex file provides instructions on a customized table of contents and sections/subsections. 
 
-The .tex document ends with a few notes on customizing bibliographies. The .bib file, if opened, provides similar details. These files are defaulted to the American Political Science Review publication standards. 
+The .tex document ends with a few notes on customizing bibliographies. The .bib file, if opened, provides similar details. This is a great beginning document to get started in using .bib files, and creating easy bibliographies with easily changable citation formatting. 
 
-## Index 
+#### Index 
 The LaTeX index file is a neat example of guided note-taking where I grabbed "notable quotes" from various readings; yet, as this document grows it may be difficult to find quotes per topic! Indexing can help since an organized table of contents may not account for multiple topics within a quote, and would be taxing to shuffle around quotes. 
 
 The index file begins with a quick introduction to quick-building in LaTeX since the compiling process would include making a latex index file. Consider placing this file into its own folder for your own notes since the associated files can add a lot of clutter to say /documents. The index file includes hyperlinks on the page number to jump to a section where the quote is (or whatever you're indexing). 
 
 After compiling, consider opening these index files that are made in Notepad or Notepad++, this should provide some intution on how LaTeX adds seperate files to generate an index, and how these indexes can be formatted for more advanced or organized indices. 
 
-## R From .rnw
-What if we need to add code neatly to our LaTeX documentation? I would consider building programming language not in TeXMaker but in (in the case of R) R's "sweave" document. This will build a .rnw (meaning R "no web") document which looks very similar to LaTeX! Change you R setting to change from "sweave" to `knitr` and launch a new .rnw to begin using the .rnw just like you would LaTeX. This makes adding code easy and ensures reproducability. 
-
-If you're interested, I've included how these R sections are formatted in a LaTeX output which is ran to give you the .pdf (this is all done under the hood in R from .rnw ("sweave")). These files are a great way to present code in an organized way for readers to clearly sepearate code from text. These are also great for doing quantiative homework assignments or reports more broadly. 
+#### LaTeX in R from .rnw
+What if we need to add code neatly to our LaTeX documentation? I would consider building programming language not in TeXMaker but in (in the case of R) R's "sweave" document. This will build a .rnw (meaning R "no web") document which looks very similar to LaTeX! Change your R setting to change from "sweave" to `knitr` and launch a new .rnw to begin using the .rnw just like you would LaTeX. This makes adding code easy and ensures reproducability. 
 
 I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works. To customize your code output in .rnw see the various templates [here](http://animation.r-forge.r-project.org/knitr/) and how to implement them [here]( https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw). 
 
+Although we may be writing LaTeX language and code in R it still works (almost) perfectly. So not only can we easily add stylized code chunks to our documents, we can add math, figures, and any sort of .pdf editing to it as well.
 
-## Math, Tables, and Figures.
-This is a LaTeX example for building various equations, tables, and figures (including theory plots). This is, arguably, one of the main contributions of a code-based editor. 
+#### Math, Tables, and Figures.
+This is a LaTeX example for building various equations, tables, and figures (including theory plots). This is, arguably, one of the main contributions of a code-based editor. In this document I tried to include a lot of examples for you to tear apart and use yourself elsewhere. 
 
-## Dark LaTeX Slides
-This folder has a complex customized dark LaTeX format and a simple .tex dark LaTeX slides format. Both use `beamer`.
+#### Dark LaTeX Slides
+This folder has a complex customized dark LaTeX format and a simple .tex dark LaTeX slides format. Both use `beamer`. I prefer dark slides with simple content and these mostly get me through any presentation I have to make. The output is a .pdf and can be viewed in full-screen mode and ran similarly to a Microsoft presentation. 
 
-## Simple CV
+#### Simple CV
 A simplified working CV example that can be customized. If you're looking for inspiration, check out [Awesome-CV](https://github.com/posquit0/Awesome-CV).
 
 
-## Other Resources:
-The journal "Science" has a pdf on how to submit articles and format documents in LaTeX found [here](http://www.sciencemag.org/site/feature/contribinfo/prep/TeX_help/scifile.pdf). 
+### Journal Standards:
 
-Other political science journals accept LaTeX submissions or .pdf submissions. This includes the American Political Science Review who list an easy LaTeX template [here](https://www.overleaf.com/latex/templates/american-political-%20science-review-aspr-submission-%20template/fxffppspqczt#.WftFOmhSxPa). The American Political Science Association journal doesn't care, their guidelines for submission can be found [here](https://ajps.org/guidelines-for-manuscripts/). The Journal of Politics accepts .pdf and nearly every methodological journal (like Political Analysis) will accept the .tex submission as well. Journals like "Political Communication" accept .pdf files but "prefer" Word [as found here](http://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=upcp20).
+Some adacademic journals do not allow LaTeX submissions depending upon the academic field and type of journal. For political science and communication research, I have a helpful refrence list below:
 
-Overall, many top journals accept .pdf documents. For journals that have not caught up they either will catch up with technology or you can simply convert your .pdf to a Word document any time. On their end, many journals and publishing houses use LaTeX to format submissions anyways. 
+| Journal | Takes .pdf? | Helpful Sources |
+| :--- | :---: | --- |
+| Science | Yes | How to submit articles and format documents in LaTeX found [here](http://www.sciencemag.org/site/feature/contribinfo/prep/TeX_help/scifile.pdf).  |
+| APSR | Yes | LaTeX template [here](https://www.overleaf.com/latex/templates/american-political-%20science-review-aspr-submission-%20template/fxffppspqczt#.WftFOmhSxPa). |
+| APSA | Yes | guidelines for submission can be found [here](https://ajps.org/guidelines-for-manuscripts/).|
+| JOP   | Yes |   |
+| PA (Political Analysis) | Yes | May take .tex files also.  |
+| Political Communication | Yes | "Prefers" Word [as found here](http://www.tandfonline.com/action/authorSubmission?show=instructions&journalCode=upcp20). |
+| Journal of Communication | No | Guidelines can be found [here](http://onlinelibrary.wiley.com/journal/10.1111/(ISSN)1460-2466/homepage/ForAuthors.html) |
+| Communication Research | No | Guidelines can be found [here](https://us.sagepub.com/en-us/nam/journal/communication-research#submission-guidelines) |
+| Social Networks | Yes | Guideline .pdf  guide can be found [here](https://www.journals.elsevier.com/social-networks/policies) |
+
+Of course even if a journal doesn't take .pdf submissions it doesn't mean we cannot utilize LaTeX! We can still make slides, improve workflow, manage our CV, and build our bibliographies and other research materials within LaTeX. 
 
