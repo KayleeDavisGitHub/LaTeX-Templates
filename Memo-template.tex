@@ -1,24 +1,26 @@
-%%  Memo Template: Compiled by Kyle Davis
-%    The Ohio State University
-%       - For writing short paper assignments, quick letters.
-%    This is minimalist; feel free to compile using: 
-%! PDFLatex -> View PDF
-%-------------------------------------------------------------------------------
+%%!  Memo Template: Kyle Davis
+%   The Ohio State University
+%   For writing short paper assignments, quick letters.
+%   This is minimalist; feel free to compile using: 
+%   PDFLatex -> View PDF
 \documentclass[12pt]{article}
 
-% Math tools
+% Math tools:
 \usepackage{amsfonts, amsmath, amsthm, amssymb} 
-% Set margins
+
+% Set margins:
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
 \usepackage{setspace}
-% Hides hyperlink red box.
+
+% Hides hyperlink red box:
 \usepackage[bookmarks = false, hidelinks]{hyperref} 
-% Aids float of tables/figures
+
+% Aids float of tables/figures:
 \usepackage{float}
 \usepackage{subcaption}
-
-% Typeface Formatting:
 \usepackage[compact]{titlesec}
+
+% Font and Typeface Formatting: 
 \usepackage{baskervald} 
 \usepackage[style = american]{csquotes}
 \usepackage[american]{babel}
@@ -27,10 +29,11 @@
 \usepackage{scrextend}
 \usepackage{enumitem} %Footnote Formatting
 \usepackage{listings} %Footnote Formatting
-
 \setlist{nolistsep, noitemsep}
 \setlength{\footnotesep}{1.2\baselineskip}
 \deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
+% This will give a warning because we've changed a command^
+% This is okay however.
 
 % Section Formatting 
 \def\ci{\perp\!\!\!\perp}
@@ -41,7 +44,8 @@
 \usepackage{graphicx}
 %\graphicspath{{ directory location of image }}
 
-%-------------------------------------------------------------------------------
+%----------------- Indents, Page Numbering --------------------
+
 \pagestyle{plain}
 \begin{document}
 % Comment this (%) if you prefer indents: 
@@ -49,7 +53,7 @@
 \setcounter{page}{1}
 \singlespacing 
 
-%------------------------------Document Content---------------------------------
+%--------------------Document Content--------------------------
 % Header:
 \begin{center}
 \textbf{Memorandum: Title}\\
@@ -67,7 +71,9 @@ Author
 
 Memos are typically concise and bold. Reaching a point, and moving on with supporting evidence or examples --- briefly stated. 
 
-%-------------------------------------------------------------------------------
+
+
+%-------------------------------------------------------------
 \end{document}
 
 
