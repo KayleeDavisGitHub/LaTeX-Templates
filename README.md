@@ -20,6 +20,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
     * [Dark LaTeX Slides](#Dark-LaTeX-Slides)
     * [Simple CV](#Simple-CV)
   * [Journal Standards](#Journal-Standards)
+  * [Licensing](#Licensing)
   
 #### What's TeXMaker?
 LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math.net/texmaker/). Which, when files are loaded, look like this:
@@ -85,3 +86,5 @@ Some adacademic journals do not allow LaTeX submissions depending upon the acade
 
 Of course even if a journal doesn't take .pdf submissions it doesn't mean we cannot utilize LaTeX! We can still make slides, improve workflow, manage our CV, and build our bibliographies and other research materials within LaTeX. 
 
+### Licensing
+The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/3.0/us/deed.en_US). Please check licensing information for underlying LaTeX and R source coding. Be sure to cite package and coding content creators when applicable. 
