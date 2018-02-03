@@ -15,7 +15,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
     * [Memo](#Memo)
     * [BibTex and Tables of Contents](#BibTex-and-Tables-of-Contents)
     * [Index](#Index)
-    * [LaTeX in R from .rnw](#R-From-.rnw)
+    * [Example .rnw](#Example-rnw)
     * [Math, Tables, and Figures](#Math-Tables-and-Figures)
     * [Dark LaTeX Slides](#Dark-LaTeX-Slides)
     * [Simple CV](#Simple-CV)
@@ -51,12 +51,10 @@ The index file begins with a quick introduction to quick-building in LaTeX since
 
 After compiling, consider opening these index files that are made in Notepad or Notepad++, this should provide some intution on how LaTeX adds seperate files to generate an index, and how these indexes can be formatted for more advanced or organized indices. 
 
-#### LaTeX in R from .rnw
-What if we need to add code neatly to our LaTeX documentation? I would consider building programming language not in TeXMaker but in (in the case of R) R's "sweave" document. This will build a .rnw (meaning R "no web") document which looks very similar to LaTeX! Change your R setting to change from "sweave" to `knitr` and launch a new .rnw to begin using the .rnw just like you would LaTeX. This makes adding code easy and ensures reproducability. 
+#### Example .rnw
+What if we need to add code neatly to our LaTeX documentation? I would consider building programming language not in TeXMaker but in R's "sweave" document option. This will build a .rnw (meaning R "no web") document which looks very similar to LaTeX! Change your R setting to change from "sweave" to `knitr` and launch a new .rnw to begin using the .rnw just like you would LaTeX. This makes adding code easy and ensures reproducability. 
 
-I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works. To customize your code output in .rnw see the various templates [here](http://animation.r-forge.r-project.org/knitr/) and how to implement them [here]( https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw). 
-
-Although we may be writing LaTeX language and code in R it still works (almost) perfectly. So not only can we easily add stylized code chunks to our documents, we can add math, figures, and any sort of .pdf editing to it as well.
+I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works. To customize your code output in .rnw see the various templates [here](http://animation.r-forge.r-project.org/knitr/) and how to implement them [here]( https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw). I've included some customization for you to consider.
 
 #### Math, Tables, and Figures.
 This is a LaTeX example for building various equations, tables, and figures (including theory plots). This is, arguably, one of the main contributions of a code-based editor. In this document I tried to include a lot of examples for you to tear apart and use yourself elsewhere. 
