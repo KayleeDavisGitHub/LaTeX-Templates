@@ -6,3 +6,7 @@ For these download the `beamercolorthememule.sty` and `beamerthemeKalgan.sty` in
 
 Option 2 is to use a simple dark theme involving just the .tex file. Both are created using LaTeX's `beamer` and appeal to those who like using dark slides. 
 
+
+## For OSU Light Slides:
+
+Check out a cool Ohio State design from [Adam Lauretig](https://github.com/adamlauretig/OSU_brand_slides).
