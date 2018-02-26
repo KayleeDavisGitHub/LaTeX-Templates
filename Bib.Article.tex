@@ -14,29 +14,19 @@
 % Packages used. Explained in some more details at:
 % https://github.com/KyleDavisGithub/LaTeX-Templates/blob/master/Memo-template.tex
 
-\usepackage{scrextend}
-\usepackage[T1]{fontenc}
+%\usepackage[T1]{fontenc}
 %! tex tools: including "natbib" for our bibliography
 \usepackage{graphicx, fullpage, natbib, float, relsize, epsfig} 
 % Math tools:
-\usepackage{textcomp} % Just for tilda's I think
 \usepackage{amsfonts, amsmath, amsthm, amssymb, mathtools} 
 % Margins:
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
-\usepackage{setspace}
 \usepackage[bookmarks = false, hidelinks]{hyperref} 
-\usepackage{booktabs}
-\usepackage{array}
-\usepackage{dcolumn}
-\usepackage{float}
-\usepackage{subcaption}
-\usepackage{siunitx}
-\usepackage[compact]{titlesec}
-\usepackage{baskervald}
-\usepackage{enumitem}
-\usepackage[style = american]{csquotes}
-\usepackage[american]{babel} 
-\usepackage{verbatim} 
+
+%\usepackage{baskervald}
+%\usepackage[style = american]{csquotes}
+%\usepackage[american]{babel} 
+
 \usepackage{wrapfig}  % Wrap Figures and caption easier
 \usepackage{caption}
 
@@ -47,18 +37,8 @@
 % \todo 
 % https://tex.stackexchange.com/questions/9796/how-to-add-todo-notes
 
-% Footnote Formatting
-\setlist{nolistsep, noitemsep}
-\setlength{\footnotesep}{1.2\baselineskip}
-\deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
-
-% Section Formatting 
-\def\ci{\perp\!\!\!\perp}
-\titleformat*{\section}{\large\bfseries}
-\titleformat*{\subsection}{\normalsize\bfseries}
-
 % Table of Contents Formatting (babel) for renaming the Table of Contents (to "Navigation")
-\addto\captionsamerican{ \renewcommand*\contentsname{Navigation} }
+%\addto\captionsamerican{ \renewcommand*\contentsname{Navigation} }
 
 
 %-------------------- Document ----------------------------
@@ -96,14 +76,6 @@ Some Introduction before the table of contents.
 
 Some text.
 
-\section{Another:}
-
-Follow up text.
-
-\section{Yet Another:}
-
-Yet more text.
-
 \section{Nail Biting Conclusion:}
 
 Ending text which will cite \citep{cary1967influence}.
@@ -128,7 +100,7 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 \begingroup
     % If commented out, this will not included references in
     % the references page if not \cite'ed in paper.
-	\nocite{*}
+	%\nocite{*}
 	
 	%\setlength{\bibsep}{12pt}
 	
@@ -136,11 +108,11 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 	%\setstretch{2}
 	
 % Have your file in the same location as this tex document, then just name the .bib file here:
-	\bibliography{BibFile}
+	\bibliography{bibfile}
 	
 % There's a ton of different options here, I prefer APSR but you can change this to anything!
 %  It will code everything automatically.
-	\bibliographystyle{apsr}
+	\bibliographystyle{plain}
 	% Or; apa
 	%   ; plain
 	%   ; apsr
@@ -153,11 +125,16 @@ This text will cite things differently \cite{cary1967influence}. Note these cita
 
 % Consider keeping a .bib file for projects and papers for a few different reasons:
 
-% 1. Changing formatting just a click away for different journals or picky reviewers.
+% 1. Changing formatting just a click away for different journals or reviewers.
 % 2. All of your citations are in one place, a .bib can keep notes on each cite and their take aways (talk about concise note spaces!)
 % 3. If colleagues ever want to learn more about a topic the .bib file can really help them get a quick head-start!
 
 % Or consider keeping all of the articles you read in a .bib file where you can have notes on everything, and can easily cite when needed.
+
+%------------ Common Errors: --------------------------
+% - having more than one .bib file in the same location
+% - not being case sensitve in the \bibliography location
+% - The .bib file having a commented out citation
 
 
 %-------------------------------------------------------
