@@ -2,8 +2,8 @@
 %% Kyle Davis, Ohio State University
 %! To compile, consider the following quick-build setup:
 %   Options -> Configure TexMaker -> Quick Build ->
-%   User "wizard" -> Select list of commands for "quick Build   	to run" in this order: LaTeX, MakeIndex,
-%   PdfLatex(twice), View PDF.
+%   User "wizard" -> Select list of commands for "quick Build to run" in this order: 
+%      LaTeX, MakeIndex, PdfLatex(twice), View PDF.
 % This will make your document, index, then run pdflatex twice (which does a lot of debugging) and then shows you the pdf.
 
 \documentclass[12pt]{article}
@@ -11,32 +11,19 @@
 
 % package notes removed, view Memo latex notes for details
 % https://github.com/KyleDavisGithub/LaTeX-Templates
-\usepackage{scrextend}
-\usepackage[T1]{fontenc}
-\usepackage{amsfonts, amsmath, amsthm, amssymb} 
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
-\usepackage{setspace}
 \usepackage[bookmarks = false, hidelinks]{hyperref} 
-\usepackage{float}
-\usepackage{subcaption}
+
+% Section Formatting (Making things less wide and "stretchy")
 \usepackage{siunitx}
 \usepackage[compact]{titlesec}
-\usepackage{listings} 
-\usepackage{baskervald} 
-\usepackage{enumitem} 
-\usepackage[style = american]{csquotes}
-\usepackage[american]{babel} 
 
-% Footnote Formatting
-\setlist{nolistsep, noitemsep}
-\setlength{\footnotesep}{1.2\baselineskip}
-\deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
-
-% Section Formatting 
 \def\ci{\perp\!\!\!\perp}
 \titleformat*{\section}{\large\bfseries}
 \titleformat*{\subsection}{\normalsize\bfseries}
 
+% For \singlespacing
+\usepackage{setspace}
 %------------------------------ Document -----------------------------------------------
 \pagestyle{plain}
 \makeindex % Make the index
@@ -121,8 +108,6 @@ Zaller (1992) defines predispositions as ``stable, individual-level traits that 
 \textit{E. E. Schattschneider, 1960, p. 135-136}
 
 \textit{Realist View:} ``It is an outrage to attribute the failures of American democracy to the ignorance and stupidity of the masses. The most disastrous shortcomings of the system have been those of the intellectuals whose concepts of democracy have been amazingly rigid and uninventive.''\index{Democracy} \index{Realism}
-
-
 
 
 %------------------------------ Index -----------------------------------------------
