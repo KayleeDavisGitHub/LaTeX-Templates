@@ -7,8 +7,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
 
 
 ### Table of contents
-➥ ./gh-md-toc https://github.com/ekalinin/envirius/blob/master/README.md
-
+=====================
 <!--ts-->
   * [What's TeXMaker?](#What's-TeXMaker?)
   * [What's Here?](#What's-Here)
