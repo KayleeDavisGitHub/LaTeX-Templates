@@ -1,6 +1,8 @@
-%%  Math, Tables, and FIgures Template: Compiled by Kyle Davis
+%%  Math, Tables, and Figures Template:  
+%         Kyle Davis
 %    The Ohio State University
-%       - For aid in writing math and tables in LaTeX.
+%
+% - For aid in writing math and tables in LaTeX.
 %    This is minimalist; feel free to compile using: 
 %! PDFLatex -> View PDF
 %-----------------------------------------------------------
@@ -8,39 +10,24 @@
 
 %! Some formatting tools: (\mathlarger)
 \usepackage{graphicx, fullpage, natbib, float, relsize, epsfig} 
+
 %! Math tools
 \usepackage{amsfonts, amsmath, amsthm, amssymb, mathtools} 
+
 % Set margins
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
 \usepackage{setspace}
-% Hides hyperlink red box.
+
+% Hides hyperlink red box:
 \usepackage[bookmarks = false, hidelinks]{hyperref} 
+
 % Aids float of tables/figures
 \usepackage{float}
 \usepackage{subcaption}
 
-% Typeface Formatting:
-\usepackage[compact]{titlesec}
-\usepackage{baskervald} 
-\usepackage[style = american]{csquotes}
-\usepackage[american]{babel}
-
-% Footnote Formatting
-\usepackage{scrextend}
-\usepackage{enumitem} 
-\usepackage{listings} 
-
-\setlist{nolistsep, noitemsep}
-\setlength{\footnotesep}{1.2\baselineskip}
-\deffootnote[.2in]{0in}{0em}{\normalsize\thefootnotemark.\enskip}
-
-% Section Formatting 
-\def\ci{\perp\!\!\!\perp}
-\titleformat*{\section}{\large\bfseries}
-\titleformat*{\subsection}{\normalsize\bfseries}
-
 % To insert graphics using:: \includegraphics[scale=•]{•}
 \usepackage{graphicx}
+% If not in same location as .tex file:
 %\graphicspath{{ directory location of image }}
 
 %! Used in making graphs and plotting:
@@ -60,7 +47,7 @@
 \setcounter{page}{1}
 \singlespacing 
 
-%------------------- Document Conten ---------------------
+%------------------ Document Content ---------------------
 % Header:
 \begin{center}
 \textbf{The Wonderful and Wacky World of Math!}\\
@@ -311,24 +298,6 @@ Num.\ obs.         & 314       & 314       & 314       \\
 \end{tikzpicture} 
 \end{center}
 
-\hfill 
-
-% From:
-% Author: Stefan Kottwitz
-% https://www.packtpub.com/hardware-and-creative/latex-cookbook
-\begin{center}
-\begin{tikzpicture}
-  \begin{scope}[blend group = soft light]
-    \fill[red!30!white]   ( 90:1.2) circle (2);
-    \fill[green!30!white] (210:1.2) circle (2);
-    \fill[blue!30!white]  (330:1.2) circle (2);
-  \end{scope}
-  \node at ( 90:2)    {Typography};
-  \node at ( 210:2)   {Design};
-  \node at ( 330:2)   {Coding};
-  \node [font=\Large] {\LaTeX};
-\end{tikzpicture}
-\end{center}
 
 % Each of these have gotten me through most causal graphing models
 % and other diagrams I've needed so far. But consider a large
@@ -458,4 +427,3 @@ Num.\ obs.         & 314       & 314       & 314       \\
 %---------------------------------------------------------
 
 \end{document}
-
