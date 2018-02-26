@@ -21,8 +21,8 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
   * [Licensing](#Licensing)
 <!--te-->
 
-$ wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
-$ chmod a+x gh-md-toc
+wget https://raw.githubusercontent.com/ekalinin/github-markdown-toc/master/gh-md-toc
+chmod a+x gh-md-toc
 
 #### What's TeXMaker?
 LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math.net/texmaker/). Which, when files are loaded, look like this:
