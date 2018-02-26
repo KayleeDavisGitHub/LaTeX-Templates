@@ -6,10 +6,8 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
 
 
 
-
-
 ### Table of contents
-
+<!--ts-->
   * [What's TeXMaker?](#What's-TeXMaker?)
   * [What's Here?](#What's-Here)
     * [Memo](#Memo)
@@ -21,7 +19,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
     * [Simple CV](#Simple-CV)
   * [Journal Standards](#Journal-Standards)
   * [Licensing](#Licensing)
-  
+<!--te-->
 #### What's TeXMaker?
 LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math.net/texmaker/). Which, when files are loaded, look like this:
 
@@ -30,7 +28,7 @@ LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math
 On the left of TeXMaker we have some useful buttons that will add the code for various symbols into the black coding box in the middle of the screen. To the right we have the .pdf viewer to see our output when we compile. To compile our code into our .pdf we can use `Quick Build` opitions and other compiling options that we can manage through `Options -> Configure TexMaker`. The coding examples listed here will often include these needed specifications at the top of each coding section in the "preamble."
  
 #### What's here?
-Various LaTeX templates and materials. Here you will find the .tex files to learn various things you can do in LaTeX. Each .tex file will have detailed instructions in the preamble for beginners to understand some of the intuition behind LaTeX (and to more easily customize each format). See the above .pdf's for what the output will look like. Feel free to borrow this code and make it your own! 
+Various LaTeX templates and materials. Here you will find the .tex files to learn various things you can do in LaTeX. Each .tex file will have detailed instructions in the preamble for beginners to understand some of the intuition behind LaTeX (and to more easily customize each format). Feel free to borrow this code and make it your own! 
 
 #### Memo
 The LaTeX Memo format is the bare-bones format for writing quick papers or letters. It is a simple .pdf output that can be used for homework assignemnts, medium length papers, or rough-draft articles. It includes some footnote formatting, section formatting, and font formatting. I use this as a first-pass at about 90% of the things I write.
