@@ -72,6 +72,8 @@ qplot(z) +
 @
 \end{center}
 
+% All images will be saved to a new folder ("figures") wherever this .rnw is saved.
+
 Essentially this is just a beautiful cross between \LaTeX and R; a few things to note here:
 
 \begin{itemize}
