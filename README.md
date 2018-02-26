@@ -14,7 +14,6 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
     * [Example .rnw](#Example-rnw)
     * [Math, Tables, and Figures](#Math-Tables-and-Figures)
     * [Dark LaTeX Slides](#Dark-LaTeX-Slides)
-    * [Simple CV](#Simple-CV)
   * [Journal Standards](#Journal-Standards)
   * [Licensing](#Licensing)
 <!--te-->
@@ -49,7 +48,7 @@ The index file begins with a quick introduction to quick-building in LaTeX since
 
 After compiling, consider opening these index files that are made in Notepad or Notepad++, this should provide some intution on how LaTeX adds seperate files to generate an index, and how these indexes can be formatted for more advanced or organized indices. 
 
-#### Example .rnw
+#### Example.rnw
 What if we need to add code neatly to our LaTeX documentation? I would consider building programming language not in TeXMaker but in R's "sweave" document option. This will build a .rnw (meaning R "no web") document which looks very similar to LaTeX! Change your R setting to change from "sweave" to `knitr` and launch a new .rnw to begin using the .rnw just like you would LaTeX. This makes adding code easy and ensures reproducability. 
 
 I've included a example lab assignment I've created labeled "Example.rnw" launch this with RStudio to see how .rnw's works. To customize your code output in .rnw see the various templates [here](http://animation.r-forge.r-project.org/knitr/) and how to implement them [here]( https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw). I've included some customization for you to consider.
@@ -60,8 +59,8 @@ This is a LaTeX example for building various equations, tables, and figures (inc
 #### Dark LaTeX Slides
 This folder has a complex customized dark LaTeX format and a simple .tex dark LaTeX slides format. Both use `beamer`. I prefer dark slides with simple content and these mostly get me through any presentation I have to make. The output is a .pdf and can be viewed in full-screen mode and ran similarly to a Microsoft presentation. 
 
-#### Simple CV
-A simplified working CV example that can be customized. If you're looking for inspiration, check out [Awesome-CV](https://github.com/posquit0/Awesome-CV).
+#### CV
+If you're looking for LaTeX inspiration, check out [Awesome-CV](https://github.com/posquit0/Awesome-CV).
 
 
 ### Journal Standards:
