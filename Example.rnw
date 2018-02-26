@@ -6,42 +6,50 @@
 \documentclass[12pt]{article}
 
 % Packages used:
-\usepackage{amsfonts, amsmath, amsthm, amssymb} % Some math tools
+% Some math tools to make things easier/nicer
+\usepackage{amsfonts, amsmath, amsthm, amssymb}
+
+% Setting margins
 \usepackage[top = 1in, left = 1in, right = 1in, bottom = 1in]{geometry}
+
+% hiding any hyperlink boxes
 \usepackage[bookmarks = false, hidelinks]{hyperref}
 
-%-------------------------------------------------------------------------------
 
 \pagestyle{plain} % Removes page numbering
+%-------------------------------------------------------------------------------
 \begin{document}
 \begin{flushleft}
-\textbf{Name}\\
 
+\textbf{Name}\\
 
 Note that here we can add any comments, etc to talk about what we're coding.
 
 % We set up code in the following format:
 <<DGP, echo=TRUE, message=FALSE, warning=FALSE>>=
+
+# <<label , options=TRUE, options=FALSE>>=
 set.seed(12345)
 x <- 5   # Five x's
 y <- 5   # Five y's
+# @
+
 @
-
-
 
 We can do some cool things with our code:
 
 << setup, include=TRUE, cache=FALSE, echo=TRUE>>=
-# Here echo =TRUE to show code, to hide it echo=FALSE
+# Here echo =TRUE to show code, to hide from .pdf: echo=FALSE
+
 # Code Setup/ and Formatting:
 library(knitr)
-# Appologies these comments will run off of the .pdf page:
-## This code is for figures, which may be similarly customized output visualizations:
-## See https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw  for more
-## and https://github.com/yihui/knitr/blob/master/inst/misc/Sweavel.sty to fix arrow <_ issue vs <-
+# This code is for figures, which may be similarly customized output visualizations:
+## See https://github.com/yihui/knitr/blob/master/inst/examples/knitr-themes.Rnw
+## and https://github.com/yihui/knitr/blob/master/inst/misc/Sweavel.sty
+#  to fix arrow <_ issue vs <-
 options(formatR.arrow=TRUE, width=78)
 
-##! Changing out Theme to "kellys"
+##! Changing out theme to "kellys"
 ##! For Printing, consider changing this to "moe" or "edit-xcode"
 ##! Check out Themes at: http://animation.r-forge.r-project.org/knitr/
 theme = knit_theme$get("kellys")
@@ -51,11 +59,11 @@ knit_theme$set(theme)
 
 \begin{center}
 <<Example, out.width='4in'>>=
-# Fancy code highlights:
+# Now we have fancy code highlights:
 # Added in a plot here to see ease of replicable code:
 #  out.width='size parameter',
-x <- 5
-y <- 5
+
+# Note this will remember our x and y values from before
 z <- rnorm(1000, x, y)
 library(ggplot2)
 
@@ -70,6 +78,7 @@ Essentially this is just a beautiful cross between \LaTeX and R; a few things to
 \item[1.] Spell checker is a little more difficult in this format. Also the \LaTeX code will not auto-complete, making things difficult sometimes.
 \item[2.] However, your code has to run 100\% correctly from just what you enter, meaning any that reads this will have 100\% reproducability!
 \item[3.] You don't ever have to show your R code, you can have it running underneath (echo=FALSE). This means that you can actually write papers here like you would in \LaTeX but have your data and replication update automatically. This includes figure names, tables, and image customizations.
+\item[4.] All of \LaTeX commands work here as well, so creating tables, images, and references work as well!
 \end{itemize}
 
 %-------------------------------------------------------------------------------
