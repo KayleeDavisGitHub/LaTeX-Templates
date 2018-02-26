@@ -1,13 +1,10 @@
 
 # LaTeX-Templates
 
-
 Questions? Feel free to email me at MailKyleDavis@gmail.com
 
 
-
 ### Table of contents
-=====================
 <!--ts-->
   * [What's TeXMaker?](#What's-TeXMaker?)
   * [What's Here?](#What's-Here)
