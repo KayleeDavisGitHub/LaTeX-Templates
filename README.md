@@ -15,6 +15,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
     * [Math, Tables, and Figures](#Math-Tables-and-Figures)
     * [Dark LaTeX Slides](#Dark-LaTeX-Slides)
   * [Journal Standards](#Journal-Standards)
+  * [Other Resources](#Other-Resources)
   * [Licensing](#Licensing)
 <!--te-->
 
@@ -82,6 +83,21 @@ Some adacademic journals do not allow LaTeX submissions depending upon the acade
 Of course even if a journal doesn't take .pdf submissions it doesn't mean we cannot utilize LaTeX! We can still make slides, improve workflow, manage our CV, and build our bibliographies and other research materials within LaTeX. 
 
 If you must have a .doc for a publication or other reason, consider a free online converter found [here](http://pdf2doc.com/). Simply upload your .pdf and download your Word .doc. Be warned that a lot of the benefits gained from LaTeX (Math, tables, figures, complex formatting) do not transfer over well into Word. I have tested my "Memo" LaTeX formatting in the converter and it transfers over fairly well. 
+
+### Other Resources
+Some helpful resources:
+
+APA Manuscript Package: https://github.com/crsh/papaja 
+
+RStudio citation add-in help: https://github.com/crsh/citr
+
+Overleaf (https://www.overleaf.com/): Free, cloud-based collaborative writing and publishing with Latex. It includes a visual editor, and there are hundreds of pre-loaded templates available.
+ 
+Tables Generator (http://www.tablesgenerator.com/latex_tables#): You can draft of my manuscript in Word before preparing it in Latex, and this tool makes it easier to convert Word tables.  Just copy, paste, and clean up the resulting code.
+ 
+Bibtex export style for Endnote (http://endnote.com/downloads/style/bibtex-export): Use Endnote to manage references.  With this output style, you can save my cites in a Latex-friendly format.
+
+Better Bib(La)TeX Zotero extension: https://github.com/retorquere/zotero-better-bibtex
 
 ### Licensing
 The content of this project itself is licensed under the [Creative Commons Attribution 3.0 license](https://creativecommons.org/licenses/by/3.0/us/deed.en_US). Please check licensing information for underlying LaTeX and R source coding. Be sure to cite package and coding content creators when applicable. 
