@@ -1,9 +1,6 @@
 
 # LaTeX-Templates
 
-Questions? Feel free to email me at MailKyleDavis@gmail.com
-
-
 ### Table of contents
 <!--ts-->
   * [What's TeXMaker?](#What's-TeXMaker?)
@@ -23,7 +20,7 @@ Questions? Feel free to email me at MailKyleDavis@gmail.com
 #### What's TeXMaker?
 LaTeX can all be ran and built through the program [TeXMaker](http://www.xm1math.net/texmaker/). Which, when files are loaded, look like this:
 
-  ![ ](https://raw.githubusercontent.com/KyleDavisGithub/LaTeX-Templates/master/Latex.png)
+  ![ ](https://raw.githubusercontent.com/KayleeDavisGithub/LaTeX-Templates/master/Latex.png)
   
 On the left of TeXMaker we have some useful buttons that will add the code for various symbols into the black coding box in the middle of the screen. To the right we have the .pdf viewer to see our output when we compile. To compile our code into our .pdf we can use `Quick Build` opitions and other compiling options that we can manage through `Options -> Configure TexMaker`. The coding examples listed here will often include these needed specifications at the top of each coding section in the "preamble."
  
